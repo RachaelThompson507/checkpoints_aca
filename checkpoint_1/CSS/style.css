@@ -1,0 +1,35 @@
+/*FONT CSS:
+  font-family: 'Nunito Sans', sans-serif;
+  color palate:
+    Prussian Blue: #083C5D
+    Sky Blue: #328CC1
+    Gold Leaf: #D98310
+    Ivory Black: #1d2731
+    Embers: #B82601
+    Dove Grey: #d9d9d9
+*/
+body {
+  width: 100%;
+  height: 100%;
+  background-color:#1d2731;
+  margin: none;
+  padding: none;
+}
+.top-header {
+  width: 100%;
+  height: 15%;
+  margin: none;
+  padding: none;
+  position: absolute;
+  top: 0%;
+  background-color: #d9d9d9;
+}
+#logo {
+  width: 50%;
+  position: relative;
+  left: 5%;
+  top: 10%;
+}
+#nav {
+
+}
