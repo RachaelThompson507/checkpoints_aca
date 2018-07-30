@@ -15,6 +15,7 @@ body {
   background-color: #1d2731;
   margin: 0%;
   padding: 0%;
+  cursor: default;
 }
 
 .top-header {
