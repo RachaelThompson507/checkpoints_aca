@@ -20,7 +20,20 @@
     </div>
     <div id="nav">
       <nav>
+        <a class="home" href=""><img src="images/home.png" alt="home"> Home </a>
+        <a class="taas" href=""><img src="images/taas.png" alt="transcription services"> Transcription Services </a>
+        <a class="info" href=""><img src="images/info.png" alt="more information"> Information </a>
+        <a class="support" href=""><img src="images/support.png" alt="support"> Support </a>
+        <span style="font-size:32px;cursor:pointer" onclick="openNav()">&#9776; </span>
       </nav>
+    </div>
+    <!-- This is the sidenav, has JS @ bottom -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Client Login</a>
+      <a href="#">Contact Sales</a>
+      <a href="#">Typist Hiring</a>
+      <a href="#">Contact Typist Operations</a>
     </div>
   </section>
   <!--This section showcases the App -->
@@ -48,5 +61,24 @@
     </footer>
   </section>
 </body>
+<!--CREDITS -->
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+    target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 </html>
+<!-- JS for sidenav -->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
