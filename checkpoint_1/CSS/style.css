@@ -51,7 +51,7 @@ body {
 #nav a {
   padding: 0% 1% 0% 1%;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 100%;
+  font-size: 1vw;
   font-weight: bolder;
   color: #D98310;
   text-decoration: none;
@@ -72,7 +72,7 @@ body {
 #nav span {
   padding: 0% 2% 0% 2%;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 100%;
+  font-size: 1vw;
   font-weight: lighter;
   color: #083C5D;
   text-decoration: none;
@@ -98,7 +98,7 @@ body {
 #nav .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 1vw;
   color: #d9d9d9;
   display: block;
   transition: 0.3s;
@@ -113,7 +113,7 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 100%;
+  font-size: 1vw;
   margin-left: 50px;
 }
 
@@ -122,7 +122,7 @@ body {
     padding-top: 15px;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 1vw;
   }
 }
 /* CSS ^ for header, below is app */
