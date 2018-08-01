@@ -135,17 +135,4 @@ body {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  /* display: inline flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; */
 }
-
-/* #ios {
-  align-self: flex-start;
-}
-
-#android {
-  align-self: flex-start;
-} */
