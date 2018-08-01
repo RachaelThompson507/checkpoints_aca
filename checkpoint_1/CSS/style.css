@@ -126,3 +126,12 @@ body {
   }
 }
 /* CSS ^ for header, below is app */
+.app {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-image: url("../images/cell-app.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
