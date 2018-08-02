@@ -1,0 +1,274 @@
+/*FONT CSS:
+  font-family: 'Nunito Sans', sans-serif;
+  color palate:
+    Prussian Blue: #083C5D
+    Sky Blue: #328CC1
+    Gold Leaf: #D98310
+    Ivory Black: #1d2731
+    Embers: #B82601
+    Dove Grey: #d9d9d9
+*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #1d2731;
+  margin: 0%;
+  padding: 0%;
+  cursor: default;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-header {
+  width: 100%;
+  height: 8vh;
+  margin: 0%;
+  padding: 2%;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+
+#logo {
+  width: 50%;
+  padding-left: 8%;
+}
+
+#nav {
+  width: 50%;
+  align-items: stretch;
+  padding: 0% 1% 0% 1%;
+}
+
+#nav a {
+  padding: 0% 1% 0% 1%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1vw;
+  font-weight: bolder;
+  color: #D98310;
+  text-decoration: none;
+}
+
+#nav a:link {
+  color: #D98310;
+}
+
+#nav a:active {
+  color: #328CC1;
+}
+
+#nav a:hover {
+  color: #B82601;
+}
+
+#nav span {
+  padding: 0% 2% 0% 2%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1vw;
+  font-weight: lighter;
+  color: #083C5D;
+  text-decoration: none;
+}
+
+#nav span:hover {
+  color: #B82601;
+}
+
+#nav .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1d2731;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#nav .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #d9d9d9;
+  display: block;
+  transition: 0.3s;
+}
+
+#nav .sidenav a:hover {
+  color: #B82601;
+  font-size: 100%;
+}
+
+#nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 1vw;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 1vw;
+  }
+}
+
+/* CSS ^ for header, below is app */
+
+.app {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 20px solid #1d2731;
+  box-sizing: border-box;
+  background-image: url("../images/cell-app.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#ios {
+  width: 25%;
+  margin: 0 auto;
+  padding-left: 10%;
+  align-self: center;
+}
+
+#android {
+  width: 25%;
+  margin: 0 auto;
+  padding-left: 15%;
+  align-self: center;
+}
+
+/* CSS for partners */
+
+.partners {
+  width: 100%;
+  height: 30vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #083C5D;
+  background-color: #328CC1;
+  border: 20px solid #328CC1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for users section  */
+
+.users {
+  width: 100%;
+  height: 30vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #d9d9d9;
+  border: 20px solid #1d2731;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client {
+  width: 50%;
+  margin: 5vw auto;
+  padding: 5% 5% 5% 5%;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+#typists {
+  width: 50%;
+  margin: 5vw auto;
+  padding: 5% 5% 5% 5%;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #083C5D;
+}
+
+/* CSS for footer */
+
+.bottom-footer {
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #d9d9d9;
+  border: 20px solid #1d2731;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#updates {
+  width: 25%;
+  margin: 5vw auto;
+  padding: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+#company {
+  width: 25%;
+  margin: 5vw auto;
+  padding: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+#taas {
+  width: 25%;
+  margin: 5vw auto;
+  padding: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+#legal {
+  width: 25%;
+  margin: 5vw auto;
+  padding: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #328CC1;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+}
