@@ -22,12 +22,15 @@
         </header>
       </div>
       <div id="nav">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a class="home" href=""><img src="images/home.png" alt="home" align="center"> Home </a></li>
+            <li><a class="taas" href=""><img src="images/taas.png" alt="transcription services" align="center" width="4%"> Transcription Services </a></li>
+            <li><a class="info" href=""><img src="images/info.png" alt="more information" align="center" width="4%"> Information </a></li>
+            <li><a class="support" href=""><img src="images/support.png" alt="support" align="center" width="4%"> Support </a></li>
+            <li><span style="font-size:32px;cursor:default" onclick="openNav()">&#9776; </span></li>
+          </ul>
+        </nav>
       </div>
     </div>
 <!-- Main Content -->
@@ -37,6 +40,16 @@
       </main>
     </div>
   </div>
+  <!-- javascript for side nav  -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </body>
 <!-- Footer Information  -->
 <footer>
