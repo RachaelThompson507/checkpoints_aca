@@ -8,9 +8,18 @@
     Embers: #B82601
     Dove Grey: #d9d9d9
 */
+/* CSS Variables */
+
 /* MOBILE FIRST */
 
 
+
 /* TABLET CSS */
+@media only screen and (min-width: 768px){
+
+}
 
 /* DESKTOP CSS */
+@media only screen and (min-width: 992px){
+
+}
