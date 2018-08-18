@@ -8,7 +8,9 @@
     Embers: #B82601
     Dove Grey: #d9d9d9
 */
+
 /* CSS Variables */
+
 :root {
   --main-bg-color: #1d2731;
   --main-border: 2px solid #d98310;
@@ -21,7 +23,9 @@
 }
 
 /* MOBILE FIRST */
+
 /*  main container  */
+
 .container {
   width: var(--main-width);
   height: var(--main-height);
@@ -31,7 +35,9 @@
   font-family: var(--main-font);
   display: grid;
 }
+
 /*  header container  */
+
 .headerContainer {
   width: 100%;
   height: var(--main-height);
@@ -45,15 +51,20 @@
   justify-content: center;
   align-content: center;
 }
+
 #logo {
   text-align: center;
 }
+
 #nav {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  /* grid-template-areas: "home" "tass" "info" "support"; */
   justify-content: center;
   align-content: center;
 }
+
 #nav, a {
   width: 99%;
   height: auto;
@@ -61,6 +72,7 @@
   text-align: center;
   align-self: center;
 }
+
 #nav a:link {
   color: #D98310;
 }
@@ -72,7 +84,6 @@
 #nav a:hover {
   color: #B82601;
 }
-
 
 #nav span {
   display: none;
@@ -137,12 +148,10 @@
   }
 }
 
-
-
 /* TABLET CSS */
-@media only screen and (min-width: 768px) {
-}
+
+@media only screen and (min-width: 768px) {}
 
 /* DESKTOP CSS */
-@media only screen and (min-width: 992px) {
-}
+
+@media only screen and (min-width: 992px) {}
