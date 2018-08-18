@@ -9,17 +9,140 @@
     Dove Grey: #d9d9d9
 */
 /* CSS Variables */
+:root {
+  --main-bg-color: #1d2731;
+  --main-border: 2px solid #d98310;
+  --main-margin: 0 auto;
+  --main-padding: 0 auto;
+  --main-txt-color: #d9d9d9;
+  --main-width: 100%;
+  --main-height: auto;
+  --main-font: "Nunito Sans", sans-serif;
+}
 
 /* MOBILE FIRST */
+/*  main container  */
+.container {
+  width: var(--main-width);
+  height: var(--main-height);
+  margin: var(--main-margin);
+  padding: var(--main-padding);
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font);
+  display: grid;
+}
+/*  header container  */
+.headerContainer {
+  width: 100%;
+  height: var(--main-height);
+  margin: var(--main-margin);
+  padding: var(--main-padding);
+  border: var(--main-border);
+  background-color: #d9d9d9;
+  color: #d98310;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+#logo {
+  text-align: center;
+}
+#nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+#nav, a {
+  width: 99%;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+}
+#nav a:link {
+  color: #D98310;
+}
+
+#nav a:active {
+  color: #328CC1;
+}
+
+#nav a:hover {
+  color: #B82601;
+}
+
+
+#nav span {
+  display: none;
+  padding: 0% 2% 0% 2%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1vw;
+  font-weight: lighter;
+  color: #083C5D;
+  text-decoration: none;
+}
+
+#nav span:hover {
+  display: none;
+  color: #B82601;
+}
+
+#nav .sidenav {
+  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1d2731;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#nav .sidenav a {
+  display: none;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #d9d9d9;
+  display: block;
+  transition: 0.3s;
+}
+
+#nav .sidenav a:hover {
+  display: none;
+  color: #B82601;
+  font-size: 100%;
+}
+
+#nav .sidenav .closebtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 1vw;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 1.2em;
+  }
+}
 
 
 
 /* TABLET CSS */
-@media only screen and (min-width: 768px){
-
+@media only screen and (min-width: 768px) {
 }
 
 /* DESKTOP CSS */
-@media only screen and (min-width: 992px){
-
+@media only screen and (min-width: 992px) {
 }
