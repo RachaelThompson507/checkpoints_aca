@@ -40,8 +40,8 @@ body {
   background-color: #d9d9d9;
   color: #d98310;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(1fr);
 }
 
 #logo {
@@ -58,17 +58,19 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   display: grid;
-  grid-template-columns: repeat(1fr);
+
+  grid-gap: 1em;
+  justify-content: center;
   grid-template-rows: 1fr;
 }
 
 #nav a {
   width: 100%;
-  font-size: 1.2em;
-  font-weight: bolder;
+  grid-column: 1/3;
+  font-size: 1.1em;
+  font-weight: bold;
   color: #D98310;
   text-decoration: none;
-  align-content: flex-start;
 }
 
 a>img {
@@ -169,7 +171,7 @@ a>img {
 .mainContainer div {
   width: 100%;
   height: auto;
-  padding: 2% 0%; 
+  padding: 2% 0%;
   box-sizing: border-box;
   font-size: 1.2em;
   display: grid;
@@ -191,7 +193,7 @@ a>img {
 }
 
 #app #and {
-  width:90%;
+  width: 90%;
   grid-column: 2/3;
 }
 
@@ -201,11 +203,14 @@ a>img {
   font-weight: bold;
   padding: 2%;
   text-align: center;
+  box-shadow: 2px 2px #328CC1;
 }
+
 #ios a {
   text-decoration: none;
   color: #D98310;
 }
+
 #ios a:active {
   color: #328CC1;
 }
@@ -213,10 +218,12 @@ a>img {
 #ios a:hover {
   color: #B82601;
 }
-#and a{
+
+#and a {
   text-decoration: none;
   color: #D98310;
 }
+
 #and a:active {
   color: #328CC1;
 }
@@ -231,6 +238,7 @@ a>img {
   grid-column: 1/3;
   text-align: center;
 }
+
 #promo button {
   width: 90%;
   padding: 2%;
@@ -239,6 +247,80 @@ a>img {
   color: #D98310;
   grid-column: 1/3;
   text-align: center;
+  box-shadow: 2px 2px #328CC1;
+}
+#promo a {
+  text-decoration: none;
+  color: #D98310;
+}
+
+#promo a:active {
+  color: #328CC1;
+}
+
+#promo a:hover {
+  color: #B82601;
+}
+
+
+#client h1 {
+  width: 100%;
+  padding: 0 auto;
+  grid-column: 1/3;
+  text-align: center;
+}
+
+#client button {
+  width: 90%;
+  padding: 2%;
+  font-size: .9em;
+  font-weight: bold;
+  color: #D98310;
+  grid-column: 1/3;
+  text-align: center;
+  box-shadow: 2px 2px #328CC1;
+}
+#client a {
+  text-decoration: none;
+  color: #D98310;
+}
+
+#client a:active {
+  color: #328CC1;
+}
+
+#client a:hover {
+  color: #B82601;
+}
+
+#typist h1 {
+  width: 100%;
+  padding: 0 auto;
+  grid-column: 1/3;
+  text-align: center;
+}
+
+#typist button {
+  width: 90%;
+  padding: 2%;
+  font-size: .9em;
+  font-weight: bold;
+  color: #D98310;
+  grid-column: 1/3;
+  text-align: center;
+  box-shadow: 2px 2px #328CC1;
+}
+#typist a {
+  text-decoration: none;
+  color: #D98310;
+}
+
+#typist a:active {
+  color: #328CC1;
+}
+
+#typist a:hover {
+  color: #B82601;
 }
 
 /* TABLET CSS */
