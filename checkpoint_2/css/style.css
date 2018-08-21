@@ -440,7 +440,7 @@ body {
     }
 
     .mainContainer div {
-      grid-column-gap: 1em;
+      grid-column-gap: none;
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-rows: minmax(100% auto); */
     }
@@ -450,7 +450,9 @@ body {
     #app {
       width: 100%;
       height: 100%;
-      background-image: url("../images/download.jpg") ;
+      background-image: url("../images/download.jpg");
+      background-position: center;
+      background-size: 6em 8em;
       z-index: 1;
     }
 
