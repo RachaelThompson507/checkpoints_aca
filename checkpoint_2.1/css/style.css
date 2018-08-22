@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* CSS colors
+#c0dfd9 = light-teal
+#e9ece5 = green-green
+#b3c2bf = sage
+#3b3a36 = green-brown
+#22211f = green-black  */
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  /* background-color: #c0dfd9; */
+  display: grid;
+  align-items: center;
+}
+/* HEADER  */
+.headWrapper {
+  width: 100%;
+  padding: 1.5% 0% .6% 0%;
+  background-color: #c0dfd9;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: minmax(100% auto);
+  grid-gap: 2em;
+}
+
+.headBox1 {
+  grid-column: 1/4;
+  color: #fff;
+  font-stretch: extra-expanded;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0px 0px 0px transparent, 0px 1px 15px #6e6c64, 2px 1px 4px #c0dfd9, 1px 2px 5px #6e6c64, 3px 2px 5px #c0dfd9, 2px 3px 5px #6e6c64, 4px 3px 5px #e9ece5, 3px 4px 5px #6e6c64, 5px 4px 5px #6e6c64, 4px 5px 5px #6e6c64;
+}
+
+.headBox2 {
+  background-color: #fff;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(100% auto);
+  justify-items center;
+  align-items: baseline;
+}
+
+.headBox2 button {
+  background-color: #fff;
+  padding: .7em 3em .7em 3em;
+  border-radius: 0;
+  border: none;
+}
+
+.headBox2 a {
+  color: #3b3a36;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.headBox2 button:hover {
+  background-color: #b3c2bf;
+}
+
+.headBox2 button:hover a {
+  color: #fff;
+  text-shadow: 0px 0px 0px transparent, 0px 1px 10px #8a877e, 0.7px 0.5px 1px #c0dfd9, 0.5px 1px 3px #8a877e, 1.3px 0.7px 2px #c0dfd9, 1px 2px 3px #8a877e, 1.5px 1px 2px #e9ece5, 2px 3px 4px #8a877e, 2px 1.5px 2px #8a877e, 2px 3px 4px #8a877e;
+}
+
+
+
+
+/* credit
+Photo by rawpixel on Unsplash (marbleButton)
+ */
