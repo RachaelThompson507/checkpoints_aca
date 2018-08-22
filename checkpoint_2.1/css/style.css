@@ -84,23 +84,19 @@ body {
 .mainWrapper {
   background-image: url('../img/marble.jpg');
   background-size: cover;
-  position: relative;
+  padding: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row: 2fr;
+  grid-row: minmax(100% auto);
   grid-gap: 2em;
-  justify-items: space-around;
+  justify-items: flex-end;
+  align-items: flex-start;
 }
 
 .headShot {
   grid-column: 1/2;
   grid-row: 1/2;
-  padding-top: 3em;
-  padding-left: 3em;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
 }
 
 .headShot img {
@@ -110,13 +106,10 @@ body {
 .social {
   grid-column: 3/4;
   grid-row: 1/2;
-  margin: 0 auto;
-  display: flex;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: flex-end;
-  /* flex-direction: column; */
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 4fr;
+  padding-right: 20%;
 }
 
 .social>a {
@@ -128,21 +121,20 @@ body {
   color: #97c2ba;
 }
 
-.shortBio {
+.bioContact {
   grid-column: 2/3;
   grid-row: 1/2;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100% auto);
+  justify-items: flex-end;
 }
 
 .shortBio h2 {
   font-size: 2em;
   font-weight: bolder;
   color: #3b3a36;
-  text-shadow:0px 0px 0px transparent, 0px 1px 10px #8a877e, 0.7px 0.5px 1px #c0dfd9, 0.5px 1px 3px #8a877e, 1.3px 0.7px 2px #c0dfd9, 1px 2px 3px #8a877e, 1.5px 1px 2px #e9ece5, 2px 3px 4px #8a877e, 2px 1.5px 2px #8a877e, 2px 3px 4px #8a877e;
 }
 
 .shortBio p {
@@ -151,12 +143,7 @@ body {
 }
 
 .contact {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-start;
-  margin: 0 auto;
+
 }
 
 /*  Footer CSS   */
@@ -164,7 +151,7 @@ body {
   background-color: #c0dfd9;
   color:#3b3a36;
   font-weight: 500;
-  text-align: right;
+  text-align: center;
 }
 
 /* credit
