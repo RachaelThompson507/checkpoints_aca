@@ -16,10 +16,10 @@
   <div class="wrapper">
     <!-- Header -->
     <header class="headWrapper">
-      <div class="headBox headBox1">
+      <div class="headBox headBox1" id=headBox>
         <h1> {&nbsp; rachael elizabeth thompson &nbsp;} </h1>
       </div>
-      <div class="headBox headBox2">
+      <div class="headBox headBox2" id=headBox>
         <button class="home" type="button" name="home">
           <a href="#"> home </a>
         </button>
@@ -30,32 +30,58 @@
           <a href="#"> blog </a>
         </button>
         <button class="proj" type="button" name="proj">
-          <a href="#"> proj</a>
+          <a href="#"> projects </a>
         </button>
         <button class="resume" type="button" name="resume">
-          <a href="#"> res </a>
+          <a href="#"> resume </a>
         </button>
       </div>
     </header>
     <!-- Main Content -->
     <main class="mainWrapper">
       <div class="headShot">
-        <img src="" alt="">
+        <img src="././img/headShot1.jpg" alt="Photo of Myself" width="75%" height="65%">
       </div>
       <div class="social">
-      <a href="https://www.linkedin.com/in/rachael-thompson-bb420195/" width="5em"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/RachaelThompson507"><i class="fab fa-github-square"></i></a>
-        <a href="mailto:rachael.elizabeth.thompson@gmail.com?subject=helloRachael"><i class="fas fa-envelope-square"></i></a>
-      <a href="https://www.facebook.com/rachael.thompson.79"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/rachael-thompson-bb420195/"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://github.com/RachaelThompson507"><i class="fab fa-github-square fa-3x"></i></a>
+        <a href="mailto:rachael.elizabeth.thompson@gmail.com?subject=helloRachael"><i class="fas fa-envelope-square fa-3x"></i></a>
+        <a href="https://www.facebook.com/rachael.thompson.79"><i class="fab fa-facebook fa-3x"></i></a>
       </div>
       <div class="shortBio">
-
-      </div>
-      <div class="photoGallery">
-
+        <h2>helloWorld</h2>
+        <p>Welcome to my Home Page. My name is Rachael Thompson.
+          I work and play in Austin, Texas. <br> <br>
+          I am a Quality Assurance Engineer, Developer, "Geek Squad", and Data Nerd. <br> <br>
+          If you are interested in learning more about me, and the projects I am working on, visit my blog
+          and resume. </p>
       </div>
       <div class="contact">
-
+        <form id="contact-form" action="/" method="post">
+          <h3>Get in touch</h3>
+          <h4>Fill in the form below, and I'll get back to you within 24 hours.</h4>
+          <div>
+            <label>
+              <span>Name: (required)</span>
+              <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Email: (required)</span>
+              <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Message: (required)</span>
+              <textarea placeholder="Enter your message here" tabindex="5" required></textarea>
+            </label>
+          </div>
+          <div>
+            <button name="submit" type="submit" id="contact-submit">Send Email</button>
+          </div>
+        </form>
       </div>
     </main>
   </div>
@@ -63,11 +89,11 @@
   <footer class="footer">
     <div class="copyrightContainer">
       &copy; &nbsp;
-      <span id="copyright"></span>
-      &nbsp;| &nbsp;Rachael Elizabeth Thompson
+      <span id="copyright"></span> &nbsp;| &nbsp;Rachael Elizabeth Thompson
     </div>
   </footer>
   <!-- javascript -->
   <script src="./js/ret.js"></script>
 </body>
+
 </html>
