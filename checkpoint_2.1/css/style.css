@@ -194,7 +194,7 @@ body {
 
   .headBox1 {
     grid-column: 1/2;
-    font-size: 1.3em;
+    font-size: 2em;
   }
 
   .headBox2 {
@@ -230,7 +230,7 @@ body {
     align-content: center;
   }
 
-  .headShot img {
+  .headShot img { 
     border: none;
     box-shadow: 1px 1px #959e98;
   }
