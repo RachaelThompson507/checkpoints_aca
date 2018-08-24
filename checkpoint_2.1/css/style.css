@@ -36,7 +36,7 @@ body {
 .headBox {
   position: sticky;
   top: 0;
-  width:100%;
+  width: 100%;
 }
 
 .headBox1 {
@@ -87,17 +87,20 @@ body {
   background-size: cover;
   padding: 3em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 3fr 10%;
   grid-row: minmax(100% auto);
-  grid-gap: 2em;
+  grid-gap: 1em;
   justify-items: flex-end;
   align-items: flex-start;
 }
 
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+}
+
 .headShot {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  padding-left: 15%;
   margin: 0 auto;
 }
 
@@ -105,33 +108,10 @@ body {
   box-shadow: .5em .5em #97c2ba;
 }
 
-.social {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  display: grid;
-  grid-column: 1fr;
-  grid-row: 4fr;
-  padding-right: 20%;
-}
-
-.social>a {
-  color: #22211f;
-  padding: 1.5em;
-}
-
-.social>a:hover {
-  color: #97c2ba;
-}
-
-.bioContact {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  padding-left: 15%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(100% auto);
-  justify-items: flex-end;
+.shortBio {
+  border: .5em solid #a5ccc5;
+  padding: 1em;
+  color: #3b3a36;
 }
 
 .shortBio h2 {
@@ -140,22 +120,47 @@ body {
   color: #3b3a36;
 }
 
-.shortBio p {
+.contact {
   border: .5em solid #a5ccc5;
   padding: 1em;
 }
 
-.contact {
+.contact h3 {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #3b3a36;
+}
 
+.social {
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: column;
+}
+
+.social>a {
+  color: #3b3a36;
+  padding: 1em;
+}
+
+.social>a:hover {
+  color: #97c2ba;
 }
 
 /*  Footer CSS   */
+
 .footer {
+  padding: .5em;
   background-color: #c0dfd9;
-  color:#3b3a36;
+  color: #3b3a36;
   font-weight: 500;
   text-align: center;
 }
+
+/* Mobile CSS  */
+
+@media (max-width: 768px) {}
+
+@media (max-width:480px) {}
 
 /* credit
 Photo by rawpixel on Unsplash (marbleButton)
