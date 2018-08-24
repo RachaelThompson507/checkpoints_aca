@@ -1,10 +1,3 @@
-/* CSS colors
-#c0dfd9 = light-teal
-#e9ece5 = green-green
-#b3c2bf = sage
-#3b3a36 = green-brown
-#22211f = green-black  */
-
 body {
   width: 100%;
   height: 100%;
@@ -33,7 +26,7 @@ body {
   grid-gap: 1.7em;
 }
 
-.headBox {
+#headBox {
   position: sticky;
   top: 0;
   width: 100%;
@@ -85,7 +78,7 @@ body {
 .mainWrapper {
   background-image: url('../img/marble.jpg');
   background-size: cover;
-  padding: 3em;
+  padding: 2em;
   display: grid;
   grid-template-columns: 3fr 10%;
   grid-row: minmax(100% auto);
@@ -129,6 +122,10 @@ body {
   font-size: 2em;
   font-weight: bolder;
   color: #3b3a36;
+}
+
+.contact:nth-child(2) {
+  padding: 2%;
 }
 
 .social {
