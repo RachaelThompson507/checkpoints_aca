@@ -66,6 +66,16 @@ h1 {
                2px 2px #424242;
 }
 
+.button {
+  width:70%;
+  height:5%;
+  font-size: .7em;
+  border:1px solid #e5410b;
+  border-radius:5px;
+  text-align: center;
+  cursor:pointer;
+  background-color: rgba(84, 84, 84, .5);
+}
 
 #footer {
   width: 96%;
