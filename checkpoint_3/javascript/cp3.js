@@ -7,7 +7,6 @@ $(document).ready(function() {
 let numProd = 0;
 let numSold = 0;
 
-
 $('.prodButton').click(function carMade() {
   numProd += 1;
   console.log(numProd);
@@ -26,7 +25,6 @@ function inventoryCall(){
   let inventory = numProd - numSold;
     $('#inventory').text(`Inventory = ${numProd} - ${numSold} = ${inventory}`);
 }
-
 
 
 
