@@ -67,6 +67,7 @@ h1 {
 }
 
 .button {
+  display: none; 
   width:70%;
   height:5%;
   font-size: .7em;
